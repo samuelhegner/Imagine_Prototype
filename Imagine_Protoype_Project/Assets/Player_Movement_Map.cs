@@ -12,6 +12,9 @@ public class Player_Movement_Map : MonoBehaviour {
     Rigidbody2D rb;
 
 
+    float dirX, dirY;
+
+
     [SerializeField]
     float movementSpeed;
 
@@ -33,8 +36,16 @@ public class Player_Movement_Map : MonoBehaviour {
             transform.position = Vector2.MoveTowards(transform.position, pointToMove, movementSpeed * Time.deltaTime);
         }
         else {
-            
+            dirX = Input.acceleration.x * movementSpeed;
+            dirY = Input.acceleration.y * movementSpeed;
         }
-        
-	}
+
+    }
+
+    void FixedUpdate()
+    {
+        if (tilt == true) {
+            rb.velocity = new Vector2(dirX, dirY);
+        }
+    }
 }

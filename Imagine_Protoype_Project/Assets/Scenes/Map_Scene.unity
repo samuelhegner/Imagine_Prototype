@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee73dc69f7967814ea6b7209bca16ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilt: 0
+  tilt: 1
   movementSpeed: 1
 --- !u!1 &519420028
 GameObject:
