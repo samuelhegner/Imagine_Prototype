@@ -10,19 +10,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Forest_Touch_Manager.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Forest_Touch_Manager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Forest_Minigame_Scripts/Forest_Touch_Manager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="1462">
+              <caret line="88" column="57" lean-forward="true" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
               <folding>
-                <marker date="1538592963494" expanded="false" signature="6:78" ph="..." />
-                <marker date="1538592963494" expanded="true" signature="130:641" ph="{...}" />
-                <marker date="1538592963494" expanded="true" signature="242:255" ph="{...}" />
-                <marker date="1538592963494" expanded="true" signature="309:639" ph="{...}" />
-                <marker date="1538592963494" expanded="true" signature="356:636" ph="{...}" />
-                <marker date="1538592963494" expanded="true" signature="410:632" ph="{...}" />
+                <marker date="1538926292597" expanded="false" signature="6:78" ph="..." />
+                <marker date="1538926292597" expanded="true" signature="130:2292" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="426:520" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="574:2284" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="665:1976" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="720:1391" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="950:1165" ph="/* Ray mRay = Camera.main.ScreenPointToRay(Input.GetTouch(i).position); ... */" />
+                <marker date="1538926292597" expanded="true" signature="1174:1345" ph="/* clone = Instantiate(projectile, transform.position, transform.rotation) as GameObject; ... */" />
+                <marker date="1538926292597" expanded="true" signature="1446:1787" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="1531:1610" ph="/* float rayDistance; ... */" />
+                <marker date="1538926292597" expanded="true" signature="1842:1970" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="2031:2226" ph="{...}" />
+                <marker date="1538926292597" expanded="true" signature="2166:2220" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -34,12 +41,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Forest_Touch_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Forest_Minigame_Scripts/Forest_Touch_Manager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Forest_Touch_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Forest_Minigame_Scripts/Forest_Touch_Manager.cs" />
       </list>
     </option>
   </component>
@@ -52,9 +60,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-33" />
-    <option name="y" value="26" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-34" />
+    <option name="y" value="25" />
     <option name="width" value="1485" />
     <option name="height" value="825" />
   </component>
@@ -64,6 +72,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -71,16 +84,22 @@
               <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Imagine_Protoype_Project" type="483dac07:UnityExplorerNode$Root" />
             </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Imagine_Protoype_Project" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Imagine_Protoype_Project" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,11 +135,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538592610461</updated>
       <workItem from="1538592615264" duration="552000" />
+      <workItem from="1538920880154" duration="5406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="552000" />
+    <option name="totallyTimeSpent" value="5958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -133,30 +153,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10029851" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,13 +192,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Forest_Touch_Manager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Forest_Minigame_Scripts/Forest_Touch_Manager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="88" column="57" lean-forward="true" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
           <folding>
-            <marker date="1538592963494" expanded="false" signature="6:78" ph="..." />
-            <marker date="1538592963494" expanded="true" signature="130:641" ph="{...}" />
-            <marker date="1538592963494" expanded="true" signature="242:255" ph="{...}" />
-            <marker date="1538592963494" expanded="true" signature="309:639" ph="{...}" />
-            <marker date="1538592963494" expanded="true" signature="356:636" ph="{...}" />
-            <marker date="1538592963494" expanded="true" signature="410:632" ph="{...}" />
+            <marker date="1538926292597" expanded="false" signature="6:78" ph="..." />
+            <marker date="1538926292597" expanded="true" signature="130:2292" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="426:520" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="574:2284" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="665:1976" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="720:1391" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="950:1165" ph="/* Ray mRay = Camera.main.ScreenPointToRay(Input.GetTouch(i).position); ... */" />
+            <marker date="1538926292597" expanded="true" signature="1174:1345" ph="/* clone = Instantiate(projectile, transform.position, transform.rotation) as GameObject; ... */" />
+            <marker date="1538926292597" expanded="true" signature="1446:1787" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="1531:1610" ph="/* float rayDistance; ... */" />
+            <marker date="1538926292597" expanded="true" signature="1842:1970" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="2031:2226" ph="{...}" />
+            <marker date="1538926292597" expanded="true" signature="2166:2220" ph="{...}" />
           </folding>
         </state>
       </provider>
