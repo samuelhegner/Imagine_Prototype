@@ -121,6 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 96531688}
+  - component: {fileID: 96531689}
   m_Layer: 0
   m_Name: Wind
   m_TagString: Untagged
@@ -142,6 +143,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96531689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96531687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe176b1530dab448a00a8ca9edede48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &138711105
 Prefab:
   m_ObjectHideFlags: 0
@@ -217,6 +229,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &347722498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347722500}
+  - component: {fileID: 347722499}
+  m_Layer: 0
+  m_Name: Forest_Audio_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &347722499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347722498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6668fa9c07509b641b9ed197e8d325e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Ambiance
+    audioMixerGroup: {fileID: 243408662992372026, guid: f53abdbdf703fff48a03ac380608cf1c,
+      type: 2}
+    clips:
+    - {fileID: 8300000, guid: fc0272465ff09b44f9f035adde20e346, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatialBlend: 0
+    loop: 1
+    mute: 0
+    playOnAwake: 1
+    source: {fileID: 0}
+    FadingIn: 0
+    FadingOut: 0
+  - name: Wind
+    audioMixerGroup: {fileID: 243862759904171356, guid: f53abdbdf703fff48a03ac380608cf1c,
+      type: 2}
+    clips:
+    - {fileID: 8300000, guid: fc0272465ff09b44f9f035adde20e346, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 1
+    mute: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+    FadingIn: 0
+    FadingOut: 0
+  master: 1
+  DontDestroyOnLoad: 0
+--- !u!4 &347722500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347722498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.29152158, y: -0.17250577, z: -0.8105469}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &391273413
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78997af9a71f2394289f0d1c624347b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WindTrans: {fileID: 96531688}
+  WindStrength: 30
   TrailPrefab: {fileID: 1157878477941596, guid: 26fecdd83c4d5b74f910b5f536f644fd,
     type: 2}
   Wind: {fileID: 96531688}
