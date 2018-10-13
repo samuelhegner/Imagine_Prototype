@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Site_Finder : MonoBehaviour {
 
@@ -27,7 +28,8 @@ public class Site_Finder : MonoBehaviour {
         for (int i = 0; i < sites.Length; i++) {
 
             GameObject site = sites[i];
-            site.transform.GetChild(0).gameObject.SetActive(false);
+            site.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = true;
+            site.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().enabled = true;
             if (Vector3.Distance(transform.position, site.transform.position) < closestSiteDist)
             {
                 closestSiteDist = Vector3.Distance(transform.position, site.transform.position);
@@ -37,10 +39,12 @@ public class Site_Finder : MonoBehaviour {
 
         if (Vector3.Distance(transform.position, closestSite.transform.position) < viewingDistance)
         {
-            closestSite.transform.GetChild(0).gameObject.SetActive(true);
+            closestSite.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = true;
+            closestSite.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().enabled = true;
         }
         else {
-            closestSite.transform.GetChild(0).gameObject.SetActive(false);
+            closestSite.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = false;
+            closestSite.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().enabled = false;
         }
     }
 }
