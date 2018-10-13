@@ -13,13 +13,15 @@
         </e>
         <e p="Follow_Player_Camera.cs" t="Include" />
         <e p="Pinch_Zoom_Camera.cs" t="Include" />
+        <e p="Player_Movement_Cosmos.cs" t="Include" />
         <e p="Player_Movement_Map.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Forest_Minigame_Scripts" t="Include">
             <e p="Forest_Touch_Manager.cs" t="Include" />
+            <e p="Wind_Script.cs" t="Include" />
           </e>
         </e>
-        <e p="Wind_Script.cs" t="Include" />
+        <e p="Site_Finder.cs" t="Include" />
       </e>
       <e p="Imagine_Protoype_Project.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
