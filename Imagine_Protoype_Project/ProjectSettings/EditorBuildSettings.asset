@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest_Scene.unity
     guid: 7c4a22b3d91d3274db55ea06cdeaa21e
+  - enabled: 1
+    path: Assets/Scenes/Map_Scene.unity
+    guid: aff18095452a4d649aef057df6a71a2f
+  - enabled: 1
+    path: Assets/Scenes/Cosmos_Scene.unity
+    guid: 2f54c00fe69ddaa438dd94fe9335ff0f
   m_configObjects: {}

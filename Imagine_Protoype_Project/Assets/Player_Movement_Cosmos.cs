@@ -24,14 +24,13 @@ public class Player_Movement_Cosmos : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         playerHeight = transform.position.y;
 
-        rb.velocity = new Vector2(Input.acceleration.x * tiltSpeed, risingSpeed * Time.deltaTime);
+        rb.velocity = new Vector2(Input.acceleration.x * tiltSpeed, risingSpeed);
 
         if (cameraZoomStart <= playerHeight - playerStartHeight) {
-            print("test");
-            cam.orthographicSize += Time.deltaTime * cameraZoomSpeed;
+            cam.orthographicSize += cameraZoomSpeed;
         }
 	}
 }

@@ -28,7 +28,7 @@ public class Pinch_Zoom_Camera : MonoBehaviour {
             float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
 
             cam.orthographicSize += deltaMagnitudeDiff * orthoZoomSpeed;
-            cam.orthographicSize = Mathf.Max(cam.orthographicSize, 4f);
+            cam.orthographicSize = Mathf.Max(cam.orthographicSize, 6f);
             cam.orthographicSize = Mathf.Min(cam.orthographicSize, 17f);
         }
     }

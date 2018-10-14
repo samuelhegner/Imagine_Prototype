@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraZoomStart: 10
-  risingSpeed: 100
-  cameraZoomSpeed: 1
+  risingSpeed: 2
+  cameraZoomSpeed: 0.5
   tiltSpeed: 1.5
 --- !u!212 &1429681283
 SpriteRenderer:

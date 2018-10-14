@@ -7,7 +7,7 @@ public class Site_Finder : MonoBehaviour {
 
     GameObject[] sites;
 
-    GameObject closestSite;
+    public GameObject closestSite;
 
     float closestSiteDist;
     public float viewingDistance;
@@ -28,8 +28,10 @@ public class Site_Finder : MonoBehaviour {
         for (int i = 0; i < sites.Length; i++) {
 
             GameObject site = sites[i];
-            site.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = true;
-            site.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().enabled = true;
+            site.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = false;
+            site.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().enabled = false;
+            site.transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).GetComponent<Image>().enabled = false;
+
             if (Vector3.Distance(transform.position, site.transform.position) < closestSiteDist)
             {
                 closestSiteDist = Vector3.Distance(transform.position, site.transform.position);
@@ -41,10 +43,12 @@ public class Site_Finder : MonoBehaviour {
         {
             closestSite.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = true;
             closestSite.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().enabled = true;
+            closestSite.transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).GetComponent<Image>().enabled = true;
         }
         else {
             closestSite.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = false;
             closestSite.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().enabled = false;
+            closestSite.transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).GetComponent<Image>().enabled = false;
         }
     }
 }
