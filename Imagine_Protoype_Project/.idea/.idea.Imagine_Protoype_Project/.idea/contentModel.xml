@@ -19,6 +19,7 @@
           <e p="Forest_Minigame_Scripts" t="Include">
             <e p="Forest_Touch_Manager.cs" t="Include" />
             <e p="Wind_Script.cs" t="Include" />
+            <e p="Wind_Tree_Controller.cs" t="Include" />
           </e>
         </e>
         <e p="Site_Finder.cs" t="Include" />
